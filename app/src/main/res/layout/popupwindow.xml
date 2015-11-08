@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popupWindow"
+    >
+
+    <TextView
+        android:id="@+id/groceryItemNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Item Name: "/>
+
+    <EditText
+        android:id="@+id/groceryItemName"
+        android:layout_below="@id/groceryItemNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/descriptionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groceryItemName"
+        android:text="Description: "/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_below="@id/descriptionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/quantityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:text="Quantity: "/>
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_below="@id/quantityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/groceryItemNameHeader"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+
+        <Button
+            android:id="@id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/deleteButton"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

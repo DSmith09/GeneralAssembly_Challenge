@@ -26,7 +26,7 @@ public class EditItem extends Activity {
         //Grab Item Info from Data Transfer
         Bundle extras = getIntent().getExtras();
 
-
+        
 
         saveButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -36,13 +36,6 @@ public class EditItem extends Activity {
         });
 
         cancelButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        deleteButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
 

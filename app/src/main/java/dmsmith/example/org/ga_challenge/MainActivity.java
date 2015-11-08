@@ -25,6 +25,14 @@ public class MainActivity extends Activity {
     //Adapter used to display the grocery items in the list
     ArrayAdapter groceryCursor;
 
+    //Popup Window Global Variables
+    PopupWindow popupWindow;
+    LinerLayout linerLayout;
+    TextView groceryItemName;
+    TextView description;
+    Button deleteButton;
+    CheckBox checkBox;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +41,6 @@ public class MainActivity extends Activity {
         //Progress Bar displayed while list loads
         ProgressBar progressBar = new ProgressBar(this);
         progressBar.setIndeterminate(true);
-
         ViewGroup root = (ViewGroup) findViewById(android.R.id.content);
         root.addView(progressBar);
 
@@ -64,6 +71,11 @@ public class MainActivity extends Activity {
                 Intent i = new Intent(MainActivity.this, EditItem.class);
             }
         });
+    }
+
+
+    private void setupPopupWindow() {
+        popupWindow = new PopupWindow
     }
 
 

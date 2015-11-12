@@ -15,8 +15,36 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/editHeader"
         android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/descriptionHeader_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:text="Description"/>
+
+    <EditText
+        android:id="@+id/description_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionHeader_edit"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/quantityHeader_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_edit"
+        android:text="Quantity"/>
+
+    <EditText
+        android:id="@+id/quantity_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantityHeader_edit"
+        android:inputType="number"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -31,17 +59,10 @@
             android:text="Save"/>
 
         <Button
-            android:id="@+id/deleteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/saveButton"
-            android:text="Delete"/>
-
-        <Button
             android:id="@+id/cancelButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/deleteButton"
+            android:layout_toRightOf="@id/saveButton"
             android:text="Cancel"/>
 
     </RelativeLayout>

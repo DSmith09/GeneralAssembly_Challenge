@@ -9,8 +9,7 @@
         android:id="@+id/groceryItemNameHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:text="Item Name: "/>
+        android:text="Grocery Item: "/>
 
     <EditText
         android:id="@+id/groceryItemName"
@@ -61,7 +60,7 @@
         android:layout_alignParentBottom="true">
 
         <Button
-            android:id="@id/deleteButton"
+            android:id="@+id/deleteButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delete"/>
